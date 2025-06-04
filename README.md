@@ -17,4 +17,4 @@ This project is a personal learning exercise. All code was written independently
 ### Jobs Orchestration
 After doing it manually, the above process is automated/orchestrated using Cloud Composer with Apache Airflow by uploading a DAG file to the Composer instance.
 The DAG file includes a bash operator and a suitable GCP airflow operator, and it was created using GPT prompts as well.
-Changes made to the data are then verified by refreshing the charts in LookerStudio.
+The job is then run again by Cloud Composer, and changes made to the data are then verified by refreshing the charts in LookerStudio.
