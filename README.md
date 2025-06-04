@@ -11,7 +11,10 @@ This project is a personal learning exercise. All code was written independently
 2. The file in the bucket is then fed into a data fusion instance, where some transformation (combining first and last names, masking PII) is performed using the UI provided.
 ### data loading
 3. Using the UI, BigQuery is then added to the pipeline. The pipeline is then run to load the data into BigQuery.
+### visualization
+4. The data is then visualised using LookerStudio.
 
 ### Jobs Orchestration
-After doing it manually, the whole process above is then automated/orchestrated using Cloud Composer with Apache Airflow by uploading a DAG file to the Composer instance.
-The DAG file includes a bash operator and a suitable gcp airflow operator and was created using GPT prompt also.
+After doing it manually, the above process is automated/orchestrated using Cloud Composer with Apache Airflow by uploading a DAG file to the Composer instance.
+The DAG file includes a bash operator and a suitable GCP airflow operator, and it was created using GPT prompts as well.
+Changes made to the data are then verified by refreshing the charts in LookerStudio.
